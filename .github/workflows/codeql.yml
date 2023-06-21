@@ -58,7 +58,7 @@ jobs:
     # Resolve environment?
     - name: Resolve environment
       id: resolve_environment
-      uses: github/codeql-action/resolve-environment@master
+      uses: github/codeql-action/resolve-environment@main
       with:
         languages: ${{ matrix.language }}
 
