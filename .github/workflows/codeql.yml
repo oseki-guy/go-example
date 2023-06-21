@@ -60,7 +60,7 @@ jobs:
       id: resolve_environment
       uses: github/codeql-action/resolve-environment@main
       with:
-        languages: ${{ matrix.language }}
+        language: ${{ matrix.language }}
 
     - run: echo ${{ steps.resolve_environment.outputs.environment }}
     
